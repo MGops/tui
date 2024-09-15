@@ -1,15 +1,17 @@
 Sidebar {
     width: 30;
+    layer: sidebar;
     height: 100%;
     dock: left;
-    background: brown;
+    background: $boost;
+    border-right: vkey $background;
     offset-x: 0;
-    transition: offset 500ms in_out_cubic;
+    transition: offset 200ms in_out_cubic;
 }
 
 
 Sidebar.-hidden{
     offset-x: -100%;
-    transition: offset 500ms in_out_cubic;
+    transition: offset 200ms in_out_cubic;
 }
 
