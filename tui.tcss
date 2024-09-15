@@ -1,5 +1,5 @@
 Sidebar {
-    width: 30;
+    width: 22;
     layer: sidebar;
     height: 100%;
     dock: left;
@@ -7,11 +7,18 @@ Sidebar {
     border-right: vkey $background;
     offset-x: 0;
     transition: offset 200ms in_out_cubic;
+    & > Vertical {
+        margin: 1 2;
+    }
 }
 
 
 Sidebar.-hidden{
     offset-x: -100%;
     transition: offset 200ms in_out_cubic;
+}
+
+Screen {
+    layers: sidebar;
 }
 

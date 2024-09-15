@@ -1,10 +1,20 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button
-from textual.containers import Container
+from textual.widgets import Header, Footer, Button, Label
+from textual.widget import Widget
+from textual.containers import Vertical
 from textual.events import Key
 
-class Sidebar(Container):
-    pass
+class Sidebar(Widget):
+
+
+    CSS_PATH = 'tui.tcss'
+
+
+    def compose(self):
+        with Vertical():
+            yield Label ('Main Menu')
+            yield Button("Patient List")
+            yield Button("Medications")
 
 
 class Dashboard(App):
