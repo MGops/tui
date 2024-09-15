@@ -1,0 +1,15 @@
+Sidebar {
+    width: 30;
+    height: 100%;
+    dock: left;
+    background: brown;
+    offset-x: 0;
+    transition: offset 500ms in_out_cubic;
+}
+
+
+Sidebar.-hidden{
+    offset-x: -100%;
+    transition: offset 500ms in_out_cubic;
+}
+
