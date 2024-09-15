@@ -12,7 +12,7 @@ class Sidebar(Widget):
 
     def compose(self):
         with Vertical():
-            yield Label ('**Main Menu**')
+            yield Label ('[b]Main Menu[/b]')
             yield Button("Patient List")
             yield Button("Medications")
 
