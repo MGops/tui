@@ -1,8 +1,8 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Label
+from textual.widgets import Header, Footer, Button, Label, Input, Static
 from textual.widget import Widget
-from textual.containers import Vertical
-from textual.events import Key
+from textual.containers import Vertical, Container
+
 
 class Sidebar(Widget):
 
@@ -13,6 +13,7 @@ class Sidebar(Widget):
     def compose(self):
         with Vertical():
             yield Label ('Main Menu')
+            yield Input(placeholder="Initials")
             yield Button("Patient List")
             yield Button("Medications")
 
@@ -20,16 +21,15 @@ class Sidebar(Widget):
 class Dashboard(App):
 
     BINDINGS = [
-        ('Q', 'quit', 'Quit'),
         ("ctrl+s", "toggle_sidebar", "Toggle sidebar")
     ]
 
     CSS_PATH = 'tui.tcss'
 
     def compose(self):
-        yield Header(show_clock=True)
         yield Sidebar(classes='-hidden')
-        #yield Button("Medications")
+        yield Header(show_clock=True)
+        yield Static("Box1", classes="box")
         yield Footer()
 
     def action_toggle_sidebar(self):

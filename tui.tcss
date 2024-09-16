@@ -20,5 +20,12 @@ Sidebar.-hidden{
 
 Screen {
     layers: sidebar;
+    layout: vertical;
+}
+
+.box {
+    height: 1fr;
+    border: white;
+    background: grey;
 }
 
