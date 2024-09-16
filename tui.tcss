@@ -12,7 +12,6 @@ Sidebar {
     }
 }
 
-
 Sidebar.-hidden{
     offset-x: -100%;
     transition: offset 200ms in_out_cubic;
@@ -20,6 +19,7 @@ Sidebar.-hidden{
 
 Screen {
     layers: sidebar;
+
     layout: vertical;
 }
 
