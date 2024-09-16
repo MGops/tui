@@ -16,6 +16,7 @@ class Sidebar(Widget):
             #yield Input(placeholder="Initials")
             yield Button("Patient List")
             yield Button("Medications")
+            yield Button("MHA")
 
 
 class Dashboard(App):
