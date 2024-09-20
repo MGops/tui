@@ -19,7 +19,6 @@ Sidebar.-hidden{
 
 Screen {
     layers: sidebar;
-
     layout: vertical;
 }
 
