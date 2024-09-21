@@ -21,13 +21,22 @@ Screen {
     layers: sidebar;
     layout: grid;
     grid-size: 3 2;
-    grid-gutter: 1;
+    grid-gutter: 1 2;
 }
 
 .box {
-    border: white;
+    border: heavy;
     height: 100%;
     /*background: grey;*/
+}
+
+#box2 {
+    border: red heavy;
+}
+
+#box3 {
+    row-span: 2;
+    border: white heavy;
 }
 
 

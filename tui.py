@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Button, Label, Input, Static
+from textual.widgets import Header, Footer, Static, Button, Label, Input
 from textual.widget import Widget
 from textual.containers import Vertical, Container
 
@@ -36,7 +36,6 @@ class Dashboard(App):
         yield Static("Box3", classes="box", id='box3')
         yield Static("Box4", classes="box", id='box4')
         yield Static("Box5", classes="box", id='box5')
-        yield Static("Box6", classes="box", id='box6')
         yield Footer()
         
 
