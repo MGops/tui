@@ -31,7 +31,7 @@ class Dashboard(App):
     def compose(self):
         yield Sidebar(classes='-hidden')
         yield Header(show_clock=True)
-        yield Static("Box1", classes="box")
+        yield Static("Box1", classes="box", id="box1")
         yield Footer()
         
 
