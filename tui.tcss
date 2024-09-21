@@ -19,13 +19,15 @@ Sidebar.-hidden{
 
 Screen {
     layers: sidebar;
-
-    layout: vertical;
+    layout: grid;
+    grid-size: 3 2;
+    grid-gutter: 1;
 }
 
 .box {
-    height: 1fr;
     border: white;
-    background: grey;
+    height: 100%;
+    /*background: grey;*/
 }
+
 
