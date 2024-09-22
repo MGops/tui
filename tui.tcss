@@ -1,5 +1,5 @@
 Sidebar {
-    width: 22;
+    width: 30;
     layer: sidebar;
     height: 100%;
     dock: left;
@@ -17,6 +17,10 @@ Sidebar.-hidden{
     transition: offset 200ms in_out_cubic;
 }
 
+
+PtList {
+    width: 30;
+}
 Screen {
     layers: sidebar;
     layout: grid;
