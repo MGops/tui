@@ -30,7 +30,7 @@ class Sidebar(Widget):
             yield Button("MHA")
 
 
-class Dashboard(App):
+class TUI(App):
 
     BINDINGS = [
         ("q", "quit", "Quit"),
@@ -55,4 +55,4 @@ class Dashboard(App):
 
 
 if __name__ == '__main__':
-    Dashboard().run()
+    TUI().run()
